@@ -1,0 +1,340 @@
+
+EVENT time: 1870.573975,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is aaaaaaaaaaaaaaaaaaa[A] : send a packet to layer 3 Packet info : seq_num : 0, acknum : 0, checksum : -2034771183, payload : [aaaaaaaaaaaaaaaaaaa...] 
+
+EVENT time: 1876.039062,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 0, acknum : 0, checksum : -2034771183, payload : [aaaaaaaaaaaaaaaaaaa...] 
+          TOLAYER3: packet being corrupted
+[B] : Send back ack to A Packet info : seq_num : 0, acknum : 0, checksum : -2034771183, payload : [aaaaaaaaaaaaaaaaaaa...] 
+
+EVENT time: 1881.270630,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+
+EVENT time: 3512.483887,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is bbbbbbbbbbbbbbbbbbb          TOLAYER3: packet being lost
+[A] : send a packet to layer 3 Packet info : seq_num : 0, acknum : 0, checksum : -2034771164, payload : [bbbbbbbbbbbbbbbbbbb...] 
+
+EVENT time: 3532.483887,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 0, acknum : 0, checksum : 1862, payload : [bbbbbbbbbbbbbbbbbbb...] 
+
+EVENT time: 3541.728516,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 0, acknum : 0, checksum : 1862, payload : [bbbbbbbbbbbbbbbbbbb...] 
+          TOLAYER3: packet being lost
+[B] : Send back ack to A Packet info : seq_num : 0, acknum : 1, checksum : 1862, payload : [bbbbbbbbbbbbbbbbbbb...] 
+
+EVENT time: 3552.483887,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 0, acknum : 0, checksum : 1862, payload : [bbbbbbbbbbbbbbbbbbb...] 
+
+EVENT time: 3553.962402,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 0, acknum : 0, checksum : 1862, payload : [bbbbbbbbbbbbbbbbbbb...] 
+[B] : Send back ack to A Packet info : seq_num : 0, acknum : 0, checksum : 1862, payload : [bbbbbbbbbbbbbbbbbbb...] 
+
+EVENT time: 3559.234619,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 3768.044678,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is ccccccccccccccccccc[A] : send a packet to layer 3 Packet info : seq_num : 1, acknum : 0, checksum : -2034771145, payload : [ccccccccccccccccccc...] 
+
+EVENT time: 3774.074219,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : -2034771145, payload : [ccccccccccccccccccc...] 
+          TOLAYER3: packet being lost
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 1, checksum : -2034771145, payload : [ccccccccccccccccccc...] 
+
+EVENT time: 3788.044678,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 1, acknum : 0, checksum : 1882, payload : [ccccccccccccccccccc...] 
+          TOLAYER3: packet being corrupted
+
+EVENT time: 3792.108398,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : 1882, payload : [Zcccccccccccccccccc...] 
+          TOLAYER3: packet being corrupted
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 0, checksum : 1882, payload : [Zcccccccccccccccccc...] 
+
+EVENT time: 3793.892334,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 5204.248047,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is ddddddddddddddddddd          TOLAYER3: packet being corrupted
+[A] : send a packet to layer 3 Packet info : seq_num : 0, acknum : 0, checksum : -2034771126, payload : [ddddddddddddddddddd...] 
+
+EVENT time: 5211.449707,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 0, acknum : 0, checksum : -2034771126, payload : [Zdddddddddddddddddd...] 
+[B] : Send back ack to A Packet info : seq_num : 0, acknum : 1, checksum : -2034771126, payload : [Zdddddddddddddddddd...] 
+
+EVENT time: 5214.080566,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 6370.696777,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is eeeeeeeeeeeeeeeeeee          TOLAYER3: packet being lost
+[A] : send a packet to layer 3 Packet info : seq_num : 1, acknum : 0, checksum : -2034771107, payload : [eeeeeeeeeeeeeeeeeee...] 
+
+EVENT time: 6390.696777,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 1, acknum : 0, checksum : 1920, payload : [eeeeeeeeeeeeeeeeeee...] 
+
+EVENT time: 6391.755371,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : 1920, payload : [eeeeeeeeeeeeeeeeeee...] 
+          TOLAYER3: packet being lost
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 0, checksum : 1920, payload : [eeeeeeeeeeeeeeeeeee...] 
+
+EVENT time: 6410.696777,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 1, acknum : 0, checksum : 1920, payload : [eeeeeeeeeeeeeeeeeee...] 
+
+EVENT time: 6415.970703,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : 1920, payload : [eeeeeeeeeeeeeeeeeee...] 
+          TOLAYER3: packet being lost
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 1, checksum : 1920, payload : [eeeeeeeeeeeeeeeeeee...] 
+
+EVENT time: 6430.696777,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 1, acknum : 0, checksum : 1920, payload : [eeeeeeeeeeeeeeeeeee...] 
+          TOLAYER3: packet being lost
+
+EVENT time: 6450.696777,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 1, acknum : 0, checksum : 1920, payload : [eeeeeeeeeeeeeeeeeee...] 
+          TOLAYER3: packet being corrupted
+
+EVENT time: 6456.946777,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : 1920, payload : [Zeeeeeeeeeeeeeeeeee...] 
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 0, checksum : 1920, payload : [Zeeeeeeeeeeeeeeeeee...] 
+
+EVENT time: 6461.766113,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 8317.197266,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is fffffffffffffffffff[A] : send a packet to layer 3 Packet info : seq_num : 0, acknum : 0, checksum : -2034771088, payload : [fffffffffffffffffff...] 
+
+EVENT time: 8320.859375,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 0, acknum : 0, checksum : -2034771088, payload : [fffffffffffffffffff...] 
+          TOLAYER3: packet being corrupted
+[B] : Send back ack to A Packet info : seq_num : 0, acknum : 1, checksum : -2034771088, payload : [fffffffffffffffffff...] 
+
+EVENT time: 8329.770508,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 9498.837891,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is ggggggggggggggggggg          TOLAYER3: packet being corrupted
+[A] : send a packet to layer 3 Packet info : seq_num : 1, acknum : 0, checksum : -2034771069, payload : [ggggggggggggggggggg...] 
+
+EVENT time: 9501.110352,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : -2034771069, payload : [Zgggggggggggggggggg...] 
+          TOLAYER3: packet being lost
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 0, checksum : -2034771069, payload : [Zgggggggggggggggggg...] 
+
+EVENT time: 9518.837891,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 1, acknum : 0, checksum : 1958, payload : [ggggggggggggggggggg...] 
+          TOLAYER3: packet being corrupted
+
+EVENT time: 9520.644531,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : 1958, payload : [Zgggggggggggggggggg...] 
+          TOLAYER3: packet being lost
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 1, checksum : 1958, payload : [Zgggggggggggggggggg...] 
+
+EVENT time: 9538.837891,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 1, acknum : 0, checksum : 1958, payload : [ggggggggggggggggggg...] 
+
+EVENT time: 9541.854492,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : 1958, payload : [ggggggggggggggggggg...] 
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 0, checksum : 1958, payload : [ggggggggggggggggggg...] 
+
+EVENT time: 9546.608398,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 11363.596680,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is hhhhhhhhhhhhhhhhhhh[A] : send a packet to layer 3 Packet info : seq_num : 0, acknum : 0, checksum : -2034771050, payload : [hhhhhhhhhhhhhhhhhhh...] 
+
+EVENT time: 11369.581055,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 0, acknum : 0, checksum : -2034771050, payload : [hhhhhhhhhhhhhhhhhhh...] 
+          TOLAYER3: packet being corrupted
+[B] : Send back ack to A Packet info : seq_num : 0, acknum : 1, checksum : -2034771050, payload : [hhhhhhhhhhhhhhhhhhh...] 
+
+EVENT time: 11377.443359,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 11693.013672,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is iiiiiiiiiiiiiiiiiii[A] : send a packet to layer 3 Packet info : seq_num : 1, acknum : 0, checksum : -2034771031, payload : [iiiiiiiiiiiiiiiiiii...] 
+
+EVENT time: 11700.971680,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : -2034771031, payload : [iiiiiiiiiiiiiiiiiii...] 
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 0, checksum : -2034771031, payload : [iiiiiiiiiiiiiiiiiii...] 
+
+EVENT time: 11705.364258,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 11809.392578,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is jjjjjjjjjjjjjjjjjjj[A] : send a packet to layer 3 Packet info : seq_num : 0, acknum : 0, checksum : -2034771012, payload : [jjjjjjjjjjjjjjjjjjj...] 
+
+EVENT time: 11819.240234,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 0, acknum : 0, checksum : -2034771012, payload : [jjjjjjjjjjjjjjjjjjj...] 
+[B] : Send back ack to A Packet info : seq_num : 0, acknum : 1, checksum : -2034771012, payload : [jjjjjjjjjjjjjjjjjjj...] 
+
+EVENT time: 11821.985352,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 12413.447266,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is kkkkkkkkkkkkkkkkkkk[A] : send a packet to layer 3 Packet info : seq_num : 1, acknum : 0, checksum : -2034770993, payload : [kkkkkkkkkkkkkkkkkkk...] 
+
+EVENT time: 12420.062500,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : -2034770993, payload : [kkkkkkkkkkkkkkkkkkk...] 
+          TOLAYER3: packet being lost
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 0, checksum : -2034770993, payload : [kkkkkkkkkkkkkkkkkkk...] 
+
+EVENT time: 12433.447266,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 1, acknum : 0, checksum : 2034, payload : [kkkkkkkkkkkkkkkkkkk...] 
+
+EVENT time: 12442.478516,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : 2034, payload : [kkkkkkkkkkkkkkkkkkk...] 
+          TOLAYER3: packet being corrupted
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 1, checksum : 2034, payload : [kkkkkkkkkkkkkkkkkkk...] 
+
+EVENT time: 12443.992188,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 13921.698242,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is lllllllllllllllllll          TOLAYER3: packet being lost
+[A] : send a packet to layer 3 Packet info : seq_num : 0, acknum : 0, checksum : -2034770974, payload : [lllllllllllllllllll...] 
+
+EVENT time: 13941.698242,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 0, acknum : 0, checksum : 2052, payload : [lllllllllllllllllll...] 
+          TOLAYER3: packet being lost
+
+EVENT time: 13961.698242,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 0, acknum : 0, checksum : 2052, payload : [lllllllllllllllllll...] 
+          TOLAYER3: packet being corrupted
+
+EVENT time: 13970.521484,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 0, acknum : 0, checksum : 2052, payload : [Zllllllllllllllllll...] 
+          TOLAYER3: packet being corrupted
+[B] : Send back ack to A Packet info : seq_num : 0, acknum : 0, checksum : 2052, payload : [Zllllllllllllllllll...] 
+
+EVENT time: 13972.105469,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 15010.799805,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is mmmmmmmmmmmmmmmmmmm[A] : send a packet to layer 3 Packet info : seq_num : 1, acknum : 0, checksum : -2034770955, payload : [mmmmmmmmmmmmmmmmmmm...] 
+
+EVENT time: 15016.638672,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : -2034770955, payload : [mmmmmmmmmmmmmmmmmmm...] 
+          TOLAYER3: packet being corrupted
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 1, checksum : -2034770955, payload : [mmmmmmmmmmmmmmmmmmm...] 
+
+EVENT time: 15019.173828,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 16879.638672,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is nnnnnnnnnnnnnnnnnnn          TOLAYER3: packet being lost
+[A] : send a packet to layer 3 Packet info : seq_num : 0, acknum : 0, checksum : -2034770936, payload : [nnnnnnnnnnnnnnnnnnn...] 
+
+EVENT time: 16899.638672,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 0, acknum : 0, checksum : 2090, payload : [nnnnnnnnnnnnnnnnnnn...] 
+          TOLAYER3: packet being lost
+
+EVENT time: 16919.638672,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 0, acknum : 0, checksum : 2090, payload : [nnnnnnnnnnnnnnnnnnn...] 
+
+EVENT time: 16922.634766,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 0, acknum : 0, checksum : 2090, payload : [nnnnnnnnnnnnnnnnnnn...] 
+          TOLAYER3: packet being lost
+[B] : Send back ack to A Packet info : seq_num : 0, acknum : 0, checksum : 2090, payload : [nnnnnnnnnnnnnnnnnnn...] 
+
+EVENT time: 16939.638672,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 0, acknum : 0, checksum : 2090, payload : [nnnnnnnnnnnnnnnnnnn...] 
+          TOLAYER3: packet being corrupted
+
+EVENT time: 16940.787109,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 0, acknum : 999999, checksum : 2090, payload : [nnnnnnnnnnnnnnnnnnn...] 
+[B] : Send back ack to A Packet info : seq_num : 0, acknum : 1, checksum : 2090, payload : [nnnnnnnnnnnnnnnnnnn...] 
+
+EVENT time: 16948.355469,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 18729.072266,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is ooooooooooooooooooo[A] : send a packet to layer 3 Packet info : seq_num : 1, acknum : 0, checksum : -2034770917, payload : [ooooooooooooooooooo...] 
+
+EVENT time: 18737.017578,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : -2034770917, payload : [ooooooooooooooooooo...] 
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 0, checksum : -2034770917, payload : [ooooooooooooooooooo...] 
+
+EVENT time: 18741.744141,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 19515.392578,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is ppppppppppppppppppp[A] : send a packet to layer 3 Packet info : seq_num : 0, acknum : 0, checksum : -2034770898, payload : [ppppppppppppppppppp...] 
+
+EVENT time: 19521.074219,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 0, acknum : 0, checksum : -2034770898, payload : [ppppppppppppppppppp...] 
+[B] : Send back ack to A Packet info : seq_num : 0, acknum : 1, checksum : -2034770898, payload : [ppppppppppppppppppp...] 
+
+EVENT time: 19526.013672,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 21322.257812,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is qqqqqqqqqqqqqqqqqqq          TOLAYER3: packet being corrupted
+[A] : send a packet to layer 3 Packet info : seq_num : 1, acknum : 0, checksum : -2034770879, payload : [qqqqqqqqqqqqqqqqqqq...] 
+
+EVENT time: 21329.025391,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : -2034770879, payload : [Zqqqqqqqqqqqqqqqqqq...] 
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 0, checksum : -2034770879, payload : [Zqqqqqqqqqqqqqqqqqq...] 
+
+EVENT time: 21332.744141,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 21605.375000,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is rrrrrrrrrrrrrrrrrrr[A] : send a packet to layer 3 Packet info : seq_num : 0, acknum : 0, checksum : -2034770860, payload : [rrrrrrrrrrrrrrrrrrr...] 
+
+EVENT time: 21612.060547,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 0, acknum : 0, checksum : -2034770860, payload : [rrrrrrrrrrrrrrrrrrr...] 
+[B] : Send back ack to A Packet info : seq_num : 0, acknum : 1, checksum : -2034770860, payload : [rrrrrrrrrrrrrrrrrrr...] 
+
+EVENT time: 21617.771484,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 23427.650391,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is sssssssssssssssssss[A] : send a packet to layer 3 Packet info : seq_num : 1, acknum : 0, checksum : -2034770841, payload : [sssssssssssssssssss...] 
+
+EVENT time: 23434.451172,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : -2034770841, payload : [sssssssssssssssssss...] 
+          TOLAYER3: packet being lost
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 0, checksum : -2034770841, payload : [sssssssssssssssssss...] 
+
+EVENT time: 23447.650391,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 1, acknum : 0, checksum : 2186, payload : [sssssssssssssssssss...] 
+          TOLAYER3: packet being lost
+
+EVENT time: 23467.650391,  type: 0, timerinterrupt   entity: 0
+[A] : Timeout occurs. Resends the last packet again Packet info : seq_num : 1, acknum : 0, checksum : 2186, payload : [sssssssssssssssssss...] 
+
+EVENT time: 23474.156250,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 1, acknum : 0, checksum : 2186, payload : [sssssssssssssssssss...] 
+[B] : Send back ack to A Packet info : seq_num : 1, acknum : 1, checksum : 2186, payload : [sssssssssssssssssss...] 
+
+EVENT time: 23475.562500,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+
+EVENT time: 24118.261719,  type: 1, fromlayer5  entity: 0
+A received a msg from layer 5, msg is ttttttttttttttttttt[A] : send a packet to layer 3 Packet info : seq_num : 0, acknum : 0, checksum : 2204, payload : [ttttttttttttttttttt...] 
+
+EVENT time: 24119.406250,  type: 2, fromlayer3  entity: 1
+Receive a packet from layer 3[B] : Send a message to layer 5 Packet info : seq_num : 0, acknum : 0, checksum : 2204, payload : [ttttttttttttttttttt...] 
+[B] : Send back ack to A Packet info : seq_num : 0, acknum : 0, checksum : 2204, payload : [ttttttttttttttttttt...] 
+
+EVENT time: 24121.824219,  type: 2, fromlayer3  entity: 0
+ACK Packet received from layer 3
+Not expected ACK. resend the data again
+ Simulator terminated at time 24121.824219
+ after sending 20 msgs from layer5
